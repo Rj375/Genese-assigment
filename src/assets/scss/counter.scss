@@ -1,0 +1,39 @@
+ 
+ 
+.count{
+    margin: auto;
+    margin-top: 80px;
+    padding: 50px;
+    border: 2px solid #22bb33;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 10px #22bb33;
+}
+
+.count button{
+    margin: 80px;
+    padding: 20px 30px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    color:	#22bb33;
+    
+    box-shadow: 5px 10px black;
+    border: 1px solid black;
+    
+    
+}
+
+.count button:hover{
+    color: black;
+}
+.count h1{
+    font-weight: bold;
+    color: #22bb33; //success ko hex value;
+}
+.count h2{
+    font-weight: bold;
+    font-size: 48px;
+    color: #22bb33; //success ko hex value;
+    
+}
