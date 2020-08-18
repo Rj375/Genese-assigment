@@ -1,4 +1,51 @@
 
 <div>
-    iam area
+  
+     <form @submit="calculateArea()" @change="updateForm()">
+
+        <label for="shapes">Select a Shape</label>
+          <select id="shapes">
+              <option value="circle" selected>Circle</option>
+              <option value="triangle">Triangle</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="square">Square</option>
+          </select>
+         
+         <br>
+         
+         <div id="input-circle">
+             <label for="radius">Radius</label>
+             <input type="number" id="radius" min="0" step="any">
+             <h2><em>A = &pi;r</em> <sup>2</sup></h2>
+         </div>
+
+         <div id="input-triangle" hidden>
+             <label for="base">Base</label>
+             <input type="number" id="base" min="0" step="any">
+             <label for="height">Height</label>
+             <input type="number" id="height" min="0" step="any">
+             <h2><em>A = <sup>bh</sup> &frasl; <sub>2</sub> </em></h2>
+
+         </div>
+
+         <div id="input-rectangle" hidden>
+             <label for="length">Length</label>
+             <input type="number" id="length" min="0" step="any">
+             <label for="width">Width</label>
+             <input type="number" id="width" min="0" step="any">
+             <h2><em>A = lw</em></h2>
+         </div>
+         
+         <div id="input-square" hidden>
+             <label for="side">Side</label>
+             <input type="number" id="side" min="0" step="any">
+             <h2><em>s <sup>2</sup></em></h2>
+         </div>
+
+         <input type="submit" value="Calculate Area">
+         <p id="id_output"></p>
+
+
+
+     </form>
 </div>
