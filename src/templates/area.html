@@ -1,9 +1,9 @@
 
-<div>
-  
-     <form @submit="calculateArea()" @change="updateForm()">
-
-        <label for="shapes">Select a Shape</label>
+<div class="area-container">
+            <h1>I Can Measure Areas</h1>
+     <form @submit="calculateArea()" @change="updateForm()" class="form">
+         
+        <label for="shapes" style="margin: 10px;">Select a Shape</label>
           <select id="shapes">
               <option value="circle" selected>Circle</option>
               <option value="triangle">Triangle</option>
@@ -42,8 +42,8 @@
              <h2><em>s <sup>2</sup></em></h2>
          </div>
 
-         <input type="submit" value="Calculate Area">
-         <p id="id_output"></p>
+         <input id="button" type="submit" value="Calculate Area">
+         <h2 id="output"></h2>
 
 
 
